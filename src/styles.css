@@ -1,0 +1,152 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+::placeholder {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #d15a7c;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-family: "Sansita Swashed", cursive;
+}
+
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.saved-locations a:hover {
+  color: #ee8972;
+  font-weight: 700;
+}
+
+input {
+  border: 2px solid #d15a7c;
+  border-radius: 30px 0 0 30px;
+  padding: 10px 20px;
+  background: #faf6e1;
+  color: #d15a7c;
+}
+
+button {
+  background: #ee8972;
+  border: 2px solid #ee8972;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.submit-btn {
+  background: #d15a7c;
+  border: 2px solid #d15a7c;
+  border-radius: 0 30px 30px 0;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background: transparent;
+  color: #ee8972;
+}
+
+.submit-btn:hover {
+  background: transparent;
+  color: #d15a7c;
+}
+
+.saved-loc-btn {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.weather-container {
+  display: block;
+  margin: 50px auto;
+  padding: 45px;
+  max-width: 900px;
+  background: #faf6e1;
+  border-radius: 60px 10px 60px 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+i {
+  font-size: 28px;
+  color: #ee8972;
+  margin-bottom: 10px;
+}
+
+/* left side */
+.curr-weather-box {
+  width: 100px;
+  height: 100px;
+  background: #f7d695;
+  border-radius: 30px 10px 30px 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+.current-weather-container .curr-weather-box {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.current-icon i {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.curr-weather-info div {
+  margin: 10px 0;
+}
+
+.curr-weather-info ul {
+  margin-bottom: 20px;
+}
+
+/* right side */
+
+span.temp-high {
+  font-weight: 700;
+}
+
+p.day {
+  font-size: 14px;
+}

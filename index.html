@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5 - Search Engine- Kierra Dahlin</title>
+    <!-- CSS only -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansita+Swashed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ee81f0d950.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container weather-container">
+      <div class="weather-app d-flex flex-wrap justify-content-between">
+        <div class="current-weather-container">
+          <div
+            class="curr-weather-box d-flex flex-column justify-content-center"
+          >
+            <div class="current-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h2>
+              <span id="current-temp">__</span>°<span id="unit-span">C</span>
+            </h2>
+          </div>
+          <div class="curr-weather-info">
+            <div>
+              <h1 id="city-heading">Search Location</h1>
+              <h3 id="date-heading"></h3>
+              <h3 id="weather-description"></h3>
+            </div>
+
+            <ul>
+              <li>Wind: <span id="wind-li">__</span> km/h</li>
+              <li>Humidity: <span id="humidity-li">__</span>%</li>
+              <li>Low: <span id="low-temp-li">__</span>°C</li>
+              <li>High: <span id="high-temp-li">__</span>°C</li>
+            </ul>
+          </div>
+          <button id="unit-btn">°C/°F</button>
+        </div>
+
+        <div
+          class="weather-view-console d-flex flex-column justify-content-between"
+        >
+          <div class="search-container">
+            <form id="search-form" class="d-inline">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search location.."
+                id="search-input"
+              />
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                class="submit-btn"
+              />
+            </form>
+            <button id="location-btn" class="current-loc-btn">
+              Current Location
+            </button>
+          </div>
+
+          <div class="forecast-container d-flex flex-wrap">
+            <div
+              class="curr-weather-box d-flex flex-column justify-content-center"
+            >
+              <i class="fa-solid fa-sun"></i>
+              <h4>
+                <span class="temp-low">10°C</span>/<span class="temp-high"
+                  >23°C</span
+                >
+              </h4>
+              <p class="day">Wed</p>
+            </div>
+            <div
+              class="curr-weather-box d-flex flex-column justify-content-center"
+            >
+              <i class="fa-solid fa-cloud-moon-rain"></i>
+              <h4>
+                <span class="temp-low">12°C</span>/<span class="temp-high"
+                  >24°C</span
+                >
+              </h4>
+              <p class="day">Thur</p>
+            </div>
+            <div
+              class="curr-weather-box d-flex flex-column justify-content-center"
+            >
+              <i class="fa-solid fa-sun"></i>
+              <h4>
+                <span class="temp-low">8°C</span>/<span class="temp-high"
+                  >20°C</span
+                >
+              </h4>
+              <p class="day">Fri</p>
+            </div>
+            <div
+              class="curr-weather-box d-flex flex-column justify-content-center"
+            >
+              <i class="fa-solid fa-cloud-bolt"></i>
+              <h4>
+                <span class="temp-low">13°C</span>/<span class="temp-high"
+                  >25°C</span
+                >
+              </h4>
+              <p class="day">Sat</p>
+            </div>
+            <div
+              class="curr-weather-box d-flex flex-column justify-content-center"
+            >
+              <i class="fa-solid fa-cloud-bolt"></i>
+              <h4>
+                <span class="temp-low">14°C</span>/<span class="temp-high"
+                  >28°C</span
+                >
+              </h4>
+              <p class="day">Sun</p>
+            </div>
+          </div>
+
+          <div class="saved-loc-container">
+            <button class="saved-loc-btn">Recent Locations</button>
+            <ul
+              id="saved-locations"
+              class="saved-locations d-flex justify-content-between"
+            >
+              <li><a href="#">Westlock</a></li>
+              <li><a href="#">Red Deer</a></li>
+              <li><a href="#">St.Albert</a></li>
+              <li><a href="#">Rocky Mt. House</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
