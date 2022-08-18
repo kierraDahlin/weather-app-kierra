@@ -99,7 +99,7 @@ button:hover {
   display: block;
   margin: 50px auto;
   padding: 45px;
-  max-width: 900px;
+  max-width: 1000px;
   background: #faf6e1;
   border-radius: 60px 10px 60px 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
