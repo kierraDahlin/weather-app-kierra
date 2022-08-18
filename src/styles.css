@@ -49,7 +49,8 @@ a {
   text-decoration: none;
 }
 
-.saved-locations a:hover {
+.saved-locations a:hover,
+.open-src-link a:hover {
   color: #ee8972;
   font-weight: 700;
 }
@@ -147,6 +148,7 @@ span.temp-high {
   font-weight: 700;
 }
 
-p.day {
+p.day,
+.open-src-link {
   font-size: 14px;
 }
